@@ -1,10 +1,24 @@
 .race{
+    height: calc(var(--container-height) - var(--header-height));
     padding: 125px 0;
     &__title{
         margin-bottom: 50px;
     }
     &__list{
+        padding: 0 5px 0 0;
         width: 100%;
+        height: 500px;
+        border-radius: var(--rounded-lg);
+        display: flex;
+        flex-direction: column;
+        overflow-y: scroll;
+        &::-webkit-scrollbar{
+            width: 5px;
+            background-color: var(--color-link);
+        }
+        &::-webkit-scrollbar-thumb{
+            background-color: var(--color-primary);
+        }
     }
     &__item{
         position: relative;
@@ -14,6 +28,7 @@
         justify-content: space-between; 
         align-items: center;
         border-radius: var(--rounded-lg);
+        transition: var(--transition-3s);
         &:hover{
             background-color: var(--color-primary);
             color: var(--color-link);
@@ -28,6 +43,7 @@
         flex-direction: column;
     }
     &__button{
+        left: 20px;
         top: -30px;
         color: var(--color-link-bg);
         position: absolute;
@@ -37,5 +53,8 @@
             position: absolute;
             color: var(--color-link-bg);
         }
+    }
+    &__header{
+        position: relative;
     }
 }

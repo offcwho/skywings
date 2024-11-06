@@ -13,3 +13,7 @@ mobileNav();
 //Parallax
 import Parallax from './modules/parallax.js';
 Parallax();
+
+//moveTo
+import moveTo from './modules/moveto.js';
+moveTo();
