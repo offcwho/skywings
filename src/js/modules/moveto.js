@@ -1,14 +1,14 @@
-const   
-    nodeObj = document.getElementById('buy-button'),
-    blockFor = document.getElementById('buy');
+function moveTo(){
 
-nodeObj.addEventListener('click', function(){
+    const   
+        nodeObj = document.getElementById('buy-button'),
+        blockFor = document.getElementById('buy');
 
-    blockFor.scrollIntoView({
-        behavior: "smooth"
-    }) 
+    nodeObj.addEventListener('click', function(){
+        blockFor.scrollIntoView({
+            behavior: "smooth"
+        })
+    })
 
-})
-
+}
 export default moveTo;
-

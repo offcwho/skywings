@@ -1,0 +1,30 @@
+.partners{
+    padding: 125px 0;
+    &__container{
+
+    }
+    &__title{
+        margin-bottom: 30px;
+    }
+    &__grid{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 30px;
+        @include small-tablet{
+            grid-template-columns: repeat(2,1fr);
+        }
+    }
+    &__item{
+        padding: 20px;
+        transition: var(--transition-3s);
+        border-radius: var(--rounded-lg);
+        &:hover{
+            scale: 1.05;
+            background-color: var(--color-primary-secondary);
+        }
+    }
+    &__image{
+        height: 80px;
+        object-fit: contain;
+    }
+}

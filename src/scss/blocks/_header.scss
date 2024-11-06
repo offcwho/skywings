@@ -1,25 +1,48 @@
 .header{
     width: 100%;
     height: 100px;
+    z-index: 9999;
     position: sticky;
-    position: -webkit-sticky;
     top: 0;
     &__container{
         display: flex;
         justify-content: space-between;
         height: 100%;
+        align-items: center;
+        @include small-tablet{
+            justify-content: flex-end;
+        }
     }
     &__nav{
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 100%;
-
+        &--active{
+            height: auto!important;
+            overflow: auto;
+            padding: 20px;
+        }
+        @include small-tablet{
+            width: 100%;
+            background-color: var(--color-link);
+            position: absolute;
+            height: 0;
+            overflow: hidden;
+            left: 0;
+            top: 0;
+            z-index: 9999;
+            flex-direction: column;
+            gap: 20px;
+        }
     }
     &__menu{
         display: flex;
         align-items: center;
         gap: 20px;
+        @include small-tablet{
+            flex-direction: column;
+        }
     }
     &__item{
         padding: 5px 10px;
@@ -28,6 +51,24 @@
         &:hover{
             background-color: var(--color-primary);
             color: var(--color-link);
+        }
+    }
+    &__button{
+        &-menu{
+            height: 60px;
+            display: none;
+            @include small-tablet{
+                display: block;
+            }
+        }
+        &-close{
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            display: none;
+            @include small-tablet{
+                display: block;
+            }
         }
     }
 }

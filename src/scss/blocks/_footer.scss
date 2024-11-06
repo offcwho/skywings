@@ -1,0 +1,9 @@
+.footer{
+    background: var(--color-primary);
+    color: var(--color-link);
+    &__left{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}

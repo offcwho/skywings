@@ -35,35 +35,37 @@
 	<body class="website" id="website">
 		<header class="website__header header" id="header">
 			<div class="container header__container">
-				<nav class="header__nav">
+				<nav class="header__nav" id="nav">
 					<a href="#!" class="header__logo">
-						<img src="asd" alt="" />
+						<img src="" alt="" />
 					</a>
 					<menu class="header__menu">
 						<li class="header__item">
 							<a href="" class="header__link">Главная</a>
 						</li>
 						<li class="header__item">
-							<a href="" class="header__link">Главная</a>
+							<a href="" class="header__link">О&#160;нас</a>
 						</li>
 						<li class="header__item">
-							<a href="" class="header__link">Главная</a>
+							<a href="" class="header__link">Рейсы</a>
 						</li>
 						<li class="header__item">
-							<a href="" class="header__link">Главная</a>
+							<a href="" class="header__link">Услуги</a>
 						</li>
 						<li class="header__item">
-							<a href="" class="header__link">Главная</a>
+							<a href="" class="header__link">Отзывы</a>
 						</li>
 						<li class="header__item">
-							<a href="" class="header__link">Главная</a>
+							<a href="" class="header__link">Новости</a>
 						</li>
 						<li class="header__item">
-							<a href="" class="header__link">Главная</a>
+							<a href="" class="header__link">Наши партнеры</a>
 						</li>
 					</menu>
 					<button class="button header__button button--primary-s">Купить билет</button>
+					<button class="button header__button-close button--primary-s" id="close">Close</button>
 				</nav>
+				<button class="button button--primary-s header__button-menu" id="open">Меню</button>
 			</div>
 		</header>
 		<div class="website__layout">
@@ -76,9 +78,7 @@
 								<p class="welcome__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, iste!</p>
 								<button class="button welcome__button button--primary" id="buy-button">Купить билет</button>
 							</div>
-							<div class="welcome__right">
-								<img src="./img/plane.svg" alt="" class="welcome__image-parallax" id="plane" />
-							</div>
+							<img src="./img/plane.svg" alt="" class="welcome__image-parallax" id="plane" />
 						</div>
 					</section>
 					<section class="website__about about">
@@ -86,16 +86,16 @@
 							<h2 class="about__title">О&#160;нас</h2>
 							<ul class="about__list">
 								<li class="about__item">
-									<div class="about__table">Мы&#160;работаем с&#160;1992&#160;г.</div>
+									<p class="about__text">Мы&#160;работаем с&#160;1992&#160;г.</p>
 								</li>
 								<li class="about__item">
-									<div class="about__table">Мы&#160;работаем с&#160;1992&#160;г.</div>
+									<p class="about__text">Более 10000 тысяч перелетов</p>
 								</li>
 								<li class="about__item">
-									<div class="about__table">Мы&#160;работаем с&#160;1992&#160;г.</div>
+									<p class="about__text">Качественное обслуживание</p>
 								</li>
 								<li class="about__item">
-									<div class="about__table">Мы&#160;работаем с&#160;1992&#160;г.</div>
+									<p class="about__text">Высокий уровень услуг</p>
 								</li>
 							</ul>
 						</div>
@@ -163,6 +163,7 @@
 					</section>
 					<section class="website__services services">
 						<div class="container services__container">
+							<h2 class="services__title">Услуги</h2>
 							<ul class="services__grid">
 								<li class="services__item">
 									<div class="services__item-header">
@@ -206,53 +207,68 @@
 					<section class="website__com com">
 						<div class="container com__container swiper">
 							<!-- Additional required wrapper -->
+							<h2 class="com__title">Отзывы</h2>
 							<div class="swiper-wrapper com__block">
 								<!-- Slides -->
 								<div class="swiper-slide com__comment">
-									<div class="com__header">
-										<img src="" alt="" class="com__userImage" />
-										<span class="com__userName">username</span>
-									</div>
+									<img src="" alt="" class="com__userImage" />
+									<span class="com__userName">username</span>
 									<p class="com__description">
 										Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem ex&#160;consectetur perspiciatis perferendis suscipit, minus quos nobis.
 										Ex&#160;fugit veritatis et&#160;ducimus nostrum numquam quae rem, perferendis&#160;nam. Maiores, voluptatum!
 									</p>
 								</div>
 								<div class="swiper-slide com__comment">
-									<div class="com__header">
-										<img src="" alt="" class="com__userImage" />
-										<span class="com__userName">username</span>
-									</div>
+									<img src="" alt="" class="com__userImage" />
+									<span class="com__userName">username</span>
 									<p class="com__description">
 										Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem ex&#160;consectetur perspiciatis perferendis suscipit, minus quos nobis.
 										Ex&#160;fugit veritatis et&#160;ducimus nostrum numquam quae rem, perferendis&#160;nam. Maiores, voluptatum!
 									</p>
 								</div>
 								<div class="swiper-slide com__comment">
-									<div class="com__header">
-										<img src="" alt="" class="com__userImage" />
-										<span class="com__userName">username</span>
-									</div>
+									<img src="" alt="" class="com__userImage" />
+									<span class="com__userName">username</span>
 									<p class="com__description">
 										Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem ex&#160;consectetur perspiciatis perferendis suscipit, minus quos nobis.
 										Ex&#160;fugit veritatis et&#160;ducimus nostrum numquam quae rem, perferendis&#160;nam. Maiores, voluptatum!
 									</p>
 								</div>
 								<div class="swiper-slide com__comment">
-									<div class="com__header">
-										<img src="" alt="" class="com__userImage" />
-										<span class="com__userName">username</span>
-									</div>
+									<img src="" alt="" class="com__userImage" />
+									<span class="com__userName">username</span>
 									<p class="com__description">
 										Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem ex&#160;consectetur perspiciatis perferendis suscipit, minus quos nobis.
 										Ex&#160;fugit veritatis et&#160;ducimus nostrum numquam quae rem, perferendis&#160;nam. Maiores, voluptatum!
 									</p>
 								</div>
 								<div class="swiper-slide com__comment">
-									<div class="com__header">
-										<img src="" alt="" class="com__userImage" />
-										<span class="com__userName">username</span>
-									</div>
+									<img src="" alt="" class="com__userImage" />
+									<span class="com__userName">username</span>
+									<p class="com__description">
+										Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem ex&#160;consectetur perspiciatis perferendis suscipit, minus quos nobis.
+										Ex&#160;fugit veritatis et&#160;ducimus nostrum numquam quae rem, perferendis&#160;nam. Maiores, voluptatum!
+									</p>
+								</div>
+								<div class="swiper-slide com__comment">
+									<img src="" alt="" class="com__userImage" />
+									<span class="com__userName">username</span>
+									<p class="com__description">
+										Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem ex&#160;consectetur perspiciatis perferendis suscipit, minus quos nobis.
+										Ex&#160;fugit veritatis et&#160;ducimus nostrum numquam quae rem, perferendis&#160;nam. Maiores, voluptatum!
+									</p>
+								</div>
+								<div class="swiper-slide com__comment">
+									<img src="" alt="" class="com__userImage" />
+									<span class="com__userName">username</span>
+									<p class="com__description">
+										Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem ex&#160;consectetur perspiciatis perferendis suscipit, minus quos nobis.
+										Ex&#160;fugit veritatis et&#160;ducimus nostrum numquam quae rem, perferendis&#160;nam. Maiores, voluptatum!
+									</p>
+								</div>
+								<div class="swiper-slide com__comment">
+									<img src="" alt="" class="com__userImage" />
+									<span class="com__userName">username</span>
 									<p class="com__description">
 										Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem ex&#160;consectetur perspiciatis perferendis suscipit, minus quos nobis.
 										Ex&#160;fugit veritatis et&#160;ducimus nostrum numquam quae rem, perferendis&#160;nam. Maiores, voluptatum!
@@ -264,6 +280,7 @@
 					</section>
 					<section class="website__news news">
 						<div class="container news__container">
+							<h2 class="news__title-block">Новости</h2>
 							<div class="news__block">
 								<div class="news__lastNews">
 									<div class="news__imageCont">
@@ -316,12 +333,70 @@
 							</div>
 						</div>
 					</section>
+					<section class="website__partners partners">
+						<div class="container partners__container">
+							<h2 class="partners__title">Наши партнеры</h2>
+							<ul class="partners__grid">
+								<li class="partners__item">
+									<a href="" class="partners__link">
+										<img src="./img/partners/sv_ru 1.png" alt="" class="partners__image" />
+									</a>
+								</li>
+								<li class="partners__item">
+									<a href="#!" class="partners__link">
+										<img src="./img/partners/ux_ru 1.png" alt="" class="partners__image" />
+									</a>
+								</li>
+								<li class="partners__item">
+									<a href="#!" class="partners__link">
+										<img src="./img/partners/ci_ru 1.png" alt="" class="partners__image" />
+									</a>
+								</li>
+								<li class="partners__item">
+									<a href="#!" class="partners__link">
+										<img src="./img/partners/china_southern_airlines-logo 1.png" alt="" class="partners__image" />
+									</a>
+								</li>
+								<li class="partners__item">
+									<a href="#!" class="partners__link">
+										<img src="./img/partners/ok_ru 1.png" alt="" class="partners__image" />
+									</a>
+								</li>
+								<li class="partners__item">
+									<a href="#!" class="partners__link">
+										<img src="./img/partners/ga_ru 1.png" alt="" class="partners__image" />
+									</a>
+								</li>
+								<li class="partners__item">
+									<a href="#!" class="partners__link">
+										<img src="./img/partners/kq_ru 1.png" alt="" class="partners__image" />
+									</a>
+								</li>
+								<li class="partners__item">
+									<a href="#!" class="partners__link">
+										<img src="./img/partners/me_ru 1.png" alt="" class="partners__image" />
+									</a>
+								</li>
+								<li class="partners__item">
+									<a href="#!" class="partners__link">
+										<img src="./img/partners/mf_ru 1.png" alt="" class="partners__image" />
+									</a>
+								</li>
+							</ul>
+						</div>
+					</section>
 				</div>
 			</main>
 		</div>
 		<footer class="website__footer footer" id="footer">
 			<div class="container footer__container">
-				Подвал сайта
+				<div class="footer__left">
+					<a href="#!" class="footer__link">
+						<img src="" alt="" class="footer__image" />
+					</a>
+					<a href="mailto:SkyWings@fly.ru" class="footer__link">SkyWings@fly.ru</a>
+					<a href="tel:+79999999999" class="footer__link">+7&#160;999&#160;999-99-99</a>
+				</div>
 			</div>
 		</footer>
 		<script src="./js/index.bundle.js"></script>

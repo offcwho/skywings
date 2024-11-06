@@ -23,13 +23,17 @@
     &__item{
         cursor: pointer;
         position: relative;
-        padding: 15px 20px;
+        padding: 20px 25px;
         width: 100%;
         display: flex;
         justify-content: space-between; 
         align-items: center;
         border-radius: var(--rounded-lg);
         transition: var(--transition-3s);
+        @include small-mobile{
+            flex-direction: column;
+            gap: 20px;
+        }
         &:hover{
             background-color: var(--color-primary);
             color: var(--color-link);
@@ -48,11 +52,16 @@
         top: -30px;
         color: var(--color-link-bg);
         position: absolute;
-        
+        @include small-mobile{
+            display: none;
+        }
         &-cost{
             top: -55px;
             position: absolute;
             color: var(--color-link-bg);
+            @include small-mobile{
+                display: none;
+            }
         }
     }
     &__header{

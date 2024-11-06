@@ -1,15 +1,5 @@
-// Галерея и лайтбоксы от Fancybox
-import { Fancybox } from '@fancyapps/ui';
-import '@fancyapps/ui/dist/fancybox/fancybox.css';
-
-Fancybox.bind('[data-fancybox]', {
-	// Your custom options
-});
-
-// import Swiper and modules styles
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+// import styles bundle
+import 'swiper/css/bundle';
 
 // Мобильная навигация
 import mobileNav from './modules/mobile-nav.js';
@@ -23,5 +13,6 @@ Parallax();
 import moveTo from './modules/moveto.js';
 moveTo();
 
+//Slider
 import Slider from './modules/slider.js';
 Slider();
