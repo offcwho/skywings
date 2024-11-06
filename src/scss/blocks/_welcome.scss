@@ -1,0 +1,36 @@
+.welcome{
+    height: calc(var(--container-height) - var(--header-height));
+    &__container{
+        height: 100%;
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    &__left{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        z-index: 1;
+    }
+    &__right{
+        position: relative;
+        height: 100%;
+    }
+    &__description{
+        color: var(--color-primary-secondary);
+    }
+    &__button{
+        margin-top: 100px;
+    }
+    &__image{
+        &-parallax{
+            position: absolute;
+            z-index: 0;
+            width: 700px;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 0;
+        }
+    }
+}

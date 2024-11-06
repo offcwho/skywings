@@ -1,0 +1,17 @@
+.about{
+    padding: 125px 0;
+    background-color: var(--color-primary);
+    color: var(--color-link);
+    height: calc(var(--container-height) - var(--header-height));
+    &__item{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    &__table{
+        padding: 20px 40px;
+        background-color: var(--color-primary-secondary);
+        width: fit-content;
+        border-radius: var(--rounded-lg);
+        margin-bottom: 75px;
+    }
+}

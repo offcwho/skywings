@@ -1,0 +1,21 @@
+.button{
+    padding: 20px 40px;
+    border-radius: var(--rounded-lg);
+    width: fit-content;
+    &--primary{
+        background-color: var(--color-primary);
+        transition: var(--transition-3s);
+        color: var(--color-link );
+        &-s{
+            background-color: var(--color-primary-secondary);
+            color: var(--color-link);
+            transition: var(--transition-3s);
+            &:hover{
+                opacity: 0.7;
+            }
+        }
+        &:hover{
+            opacity: 0.7;
+        }
+    }
+}
