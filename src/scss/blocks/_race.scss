@@ -1,6 +1,6 @@
 .race{
     height: calc(var(--container-height) - var(--header-height));
-    padding: 125px 0;
+    padding: 125px 0;   
     &__title{
         margin-bottom: 50px;
     }
@@ -21,6 +21,7 @@
         }
     }
     &__item{
+        cursor: pointer;
         position: relative;
         padding: 15px 20px;
         width: 100%;
