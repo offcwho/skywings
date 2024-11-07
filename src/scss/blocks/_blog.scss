@@ -1,6 +1,6 @@
-.news{
+.blog{
     padding: 125px 0;
-    background-color: var(--color-primary);
+    color: var(--color-link-bg);
     @include mb{
         padding: 75px 0;
     }
@@ -16,22 +16,28 @@
         justify-content: space-between;
         color: #fff;
         margin-bottom: 20px;
+        align-items: center;
         @include small-tablet{
             flex-direction: column;
             gap: 20px;
         }
     }
     &__title{
+        color: var(--color-link-bg);
+    }
+    &__text{
+        color: #111;
     }
     &__button{
         display: flex;
-        color: #ccc;
+        color: #111;
         font-size: 14px;
         line-height: 20px;
         font-weight: 600;
         align-items: center;
         gap: 10px;
         transition: var(--transition-3s);
+        border-radius: var(--rounded-lg);
         &-header{
             @include small-tablet{
                 display: none;
@@ -54,7 +60,8 @@
         align-items: center;
         justify-content: center;
         padding: 3px;
-        background-color: #7a869a;
+        background-color: var(--color-primary-secondary);
+        color: var(--color-link);
         border-radius: 50%;
     }
     &__list{
@@ -72,6 +79,8 @@
     &__item{
         width: 100%;
         transition: var(--transition-3s);
+        border: 1px solid var(--color-text-secondary);
+        border-radius: var(--rounded-lg);
         &:hover{
             scale: 1.05;
         }
