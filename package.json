@@ -46,6 +46,7 @@
 	"dependencies": {
 		"@fancyapps/fancybox": "^3.5.7",
 		"@fancyapps/ui": "^5.0.35",
+		"@vercel/speed-insights": "^1.1.0",
 		"avif-webp-checker": "^1.0.0",
 		"fullpage.js": "^4.0.30",
 		"jquery": "^3.7.1",

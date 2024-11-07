@@ -9,6 +9,11 @@
         display: flex;
         align-items: center;
         flex-direction: column;
+        &-checkbox{
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
     }
     &__header{
         width: 100%;
@@ -133,6 +138,12 @@
             border-radius: var(--rounded-lg);
         }
 
+    }
+    &__link{
+        &-checkbox{
+            text-decoration: underline!important;
+            font-weight: 500;
+        }
     }
     &__Image{
         border-radius: var(--rounded-lg) var(--rounded-lg) 0 0;
