@@ -1,5 +1,8 @@
 .partners{
     padding: 125px 0;
+    @include mb{
+        padding: 75px 0;
+    }
     &__container{
 
     }

@@ -4,6 +4,9 @@
     @include small-tablet{
         height: 100%;
     }
+    @include mb{
+        padding: 75px 0;
+    }
     &__title{
         margin-bottom: 50px;
     }

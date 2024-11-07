@@ -23,14 +23,20 @@
         align-items: center;
         width: 100%;
         &--active{
-            height: auto!important;
+            height: 100vh!important;
             overflow: auto;
             padding: 20px;
+            @include mb{
+                padding: 10px;
+            }
+            &.website__layout{
+                filter: brightness(0.5);
+            }
         }
         @include small-tablet{
             width: 100%;
             background-color: var(--color-link);
-            position: absolute;
+            position: fixed;
             height: 0;
             overflow: hidden;
             left: 0;
