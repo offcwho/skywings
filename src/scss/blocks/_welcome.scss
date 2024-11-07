@@ -1,7 +1,10 @@
 .welcome{
     height: calc(var(--container-height) - var(--header-height));
+    @include small-tablet{
+        height: auto;
+        padding: 10px 0;
+    }
     @include mb{
-        padding: 75px 0;
         height: 100%;
     }
     &__container{
@@ -44,6 +47,9 @@
     }
     &__button{
         margin-top: 100px;
+        @include small-tablet{
+            margin-top: 20px;
+        }
     }
     &__image{
         &-parallax{
