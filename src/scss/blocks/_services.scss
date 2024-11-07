@@ -1,7 +1,6 @@
 .services{
     padding: 125px 0;
     background-color: var(--color-primary);
-    height: calc(var(--container-height) - var(--header-height));
     @include small-tablet{
         height: 100%;
     }
@@ -41,6 +40,9 @@
         transition: var(--transition-3s);
         @include mobile {
             width: 75%;
+        }
+        @include mb{
+            width: 100%;
         }
         &:hover{
             scale: 1.05;

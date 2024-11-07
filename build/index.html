@@ -41,31 +41,35 @@
 					</a>
 					<menu class="header__menu">
 						<li class="header__item">
-							<a href="" class="header__link">Главная</a>
+							<a href="#welcome" class="header__link">Главная</a>
 						</li>
 						<li class="header__item">
-							<a href="" class="header__link">О&#160;нас</a>
+							<a href="#about" class="header__link">О&#160;нас</a>
 						</li>
 						<li class="header__item">
-							<a href="" class="header__link">Рейсы</a>
+							<a href="#buy" class="header__link">Рейсы</a>
 						</li>
 						<li class="header__item">
-							<a href="" class="header__link">Услуги</a>
+							<a href="#services" class="header__link">Услуги</a>
 						</li>
 						<li class="header__item">
-							<a href="" class="header__link">Отзывы</a>
+							<a href="#comments" class="header__link">Отзывы</a>
 						</li>
 						<li class="header__item">
-							<a href="" class="header__link">Новости</a>
+							<a href="#news" class="header__link">Новости</a>
 						</li>
 						<li class="header__item">
-							<a href="" class="header__link">Наши партнеры</a>
+							<a href="#partners" class="header__link">Наши партнеры</a>
 						</li>
 					</menu>
 					<button class="button header__button button--primary-s">Купить билет</button>
-					<button class="button header__button-close button--primary-s" id="close">Close</button>
+					<button class="button header__button-close button--primary-s" id="close">
+						<i data-lucide="x"></i>
+					</button>
 				</nav>
-				<button class="button button--primary-s header__button-menu" id="open">Меню</button>
+				<button class="button button--primary-s header__button-menu" id="open">
+					<i data-lucide="menu"></i>
+				</button>
 			</div>
 		</header>
 		<div class="website__layout">
@@ -75,13 +79,15 @@
 						<div class="container welcome__container">
 							<div class="welcome__left">
 								<h1 class="welcome__title">Перелеты со&#160;SkyWings</h1>
-								<p class="welcome__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, iste!</p>
+								<p class="welcome__description">
+									Мы&#160;предлагаем широкий выбор рейсов по&#160;всему миру, с&#160;удобными маршрутами и&#160;конкурентоспособными ценами.
+								</p>
 								<button class="button welcome__button button--primary" id="buy-button">Купить билет</button>
 							</div>
 							<img src="./img/plane.svg" alt="" class="welcome__image-parallax" id="plane" />
 						</div>
 					</section>
-					<section class="website__about about">
+					<section class="website__about about" id="about">
 						<div class="container about__container">
 							<h2 class="about__title">О&#160;нас</h2>
 							<ul class="about__list">
@@ -161,124 +167,151 @@
 							</div>
 						</div>
 					</section>
-					<section class="website__services services">
+					<section class="website__services services" id="services">
 						<div class="container services__container">
 							<h2 class="services__title">Услуги</h2>
 							<ul class="services__grid">
 								<li class="services__item">
 									<div class="services__item-header">
-										<span class="sevices__item-name">Эконом</span>
+										<span class="sevices__item-name">Эконом-класс</span>
 									</div>
 									<div class="services__item-block">
 										<img src="./img/Frame 79.png" alt="" class="services__item-image" />
 										<p class="services__item-description">
-											Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam magnam ipsum dignissimos culpa at&#160;corporis quas fuga deleniti modi
-											consectetur.
+											Самый доступный и&#160;базовый тип класса перелетов, предназначенный для пассажиров, которые ищут бюджетные варианты путешествия. Включает
+											стандартные удобства и&#160;услуги на&#160;борту, такие как еда и&#160;напитки.
 										</p>
 									</div>
 								</li>
 								<li class="services__item">
 									<div class="services__item-header">
-										<span class="sevices__item-name">Эконом</span>
+										<span class="sevices__item-name">Бизнес-класс</span>
 									</div>
 									<div class="services__item-block">
 										<img src="./img/Frame 79.png" alt="" class="services__item-image" />
 										<p class="services__item-description">
-											Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam magnam ipsum dignissimos culpa at&#160;corporis quas fuga deleniti modi
-											consectetur.
+											Предлагает повышенный уровень комфорта и&#160;сервиса, включая просторные сиденья, более высокое качество обслуживания, возможность выбора
+											меню и&#160;расширенный набор услуг на&#160;борту.
 										</p>
 									</div>
 								</li>
 								<li class="services__item">
 									<div class="services__item-header">
-										<span class="sevices__item-name">Эконом</span>
+										<span class="sevices__item-name">Первый класс</span>
 									</div>
 									<div class="services__item-block">
 										<img src="./img/Frame 79.png" alt="" class="services__item-image" />
 										<p class="services__item-description">
-											Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam magnam ipsum dignissimos culpa at&#160;corporis quas fuga deleniti modi
-											consectetur.
+											Наивысший уровень комфорта и&#160;роскоши, предоставляющий пассажирам эксклюзивные услуги, частные кабины, высококлассное питание,
+											премиальные напитки и&#160;полный спектр удобств. Первый класс обычно доступен на&#160;длинных международных рейсах и&#160;является
+											наиболее дорогим вариантом класса перелетов.
 										</p>
 									</div>
 								</li>
 							</ul>
 						</div>
 					</section>
-					<section class="website__com com">
+					<section class="website__com com" id="comments">
 						<div class="container com__container swiper">
 							<!-- Additional required wrapper -->
 							<h2 class="com__title">Отзывы</h2>
 							<div class="swiper-wrapper com__block">
 								<!-- Slides -->
 								<div class="swiper-slide com__comment">
-									<img src="" alt="" class="com__userImage" />
-									<span class="com__userName">username</span>
+									<picture>
+										<source srcset="./img/usericon.webp 1x, ./img/usericon@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/usericon.jpg 1x, ./img/usericon@2x.jpg 2x" type="image/jpeg" />
+										<img src="./img/usericon.jpg" alt="" class="com__userImage" />
+									</picture>
+									<span class="com__userName">Серега Пират</span>
 									<p class="com__description">
-										Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem ex&#160;consectetur perspiciatis perferendis suscipit, minus quos nobis.
-										Ex&#160;fugit veritatis et&#160;ducimus nostrum numquam quae rem, perferendis&#160;nam. Maiores, voluptatum!
+										&#171;Отличный сервис и&#160;удобные рейсы от&#160;компании Skywinds. Быстрое оформление багажа и&#160;вежливый персонал на&#160;борту.&#187;
 									</p>
 								</div>
 								<div class="swiper-slide com__comment">
-									<img src="" alt="" class="com__userImage" />
+									<picture>
+										<source srcset="./img/usericon.webp 1x, ./img/usericon@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/usericon.jpg 1x, ./img/usericon@2x.jpg 2x" type="image/jpeg" />
+										<img src="./img/usericon.jpg" alt="" class="com__userImage" />
+									</picture>
 									<span class="com__userName">username</span>
 									<p class="com__description">
-										Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem ex&#160;consectetur perspiciatis perferendis suscipit, minus quos nobis.
-										Ex&#160;fugit veritatis et&#160;ducimus nostrum numquam quae rem, perferendis&#160;nam. Maiores, voluptatum!
+										&#171;Спасибо команде Skywinds за&#160;безопасные полеты. Всегда приятно летать с&#160;такой надежной авиакомпанией.&#187;
 									</p>
 								</div>
 								<div class="swiper-slide com__comment">
-									<img src="" alt="" class="com__userImage" />
+									<picture>
+										<source srcset="./img/usericon.webp 1x, ./img/usericon@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/usericon.jpg 1x, ./img/usericon@2x.jpg 2x" type="image/jpeg" />
+										<img src="./img/usericon.jpg" alt="" class="com__userImage" />
+									</picture>
 									<span class="com__userName">username</span>
 									<p class="com__description">
-										Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem ex&#160;consectetur perspiciatis perferendis suscipit, minus quos nobis.
-										Ex&#160;fugit veritatis et&#160;ducimus nostrum numquam quae rem, perferendis&#160;nam. Maiores, voluptatum!
+										&#171;Удобное расписание рейсов и&#160;доступные цены делают компанию Skywinds отличным выбором для путешествий.&#187;
 									</p>
 								</div>
 								<div class="swiper-slide com__comment">
-									<img src="" alt="" class="com__userImage" />
+									<picture>
+										<source srcset="./img/usericon.webp 1x, ./img/usericon@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/usericon.jpg 1x, ./img/usericon@2x.jpg 2x" type="image/jpeg" />
+										<img src="./img/usericon.jpg" alt="" class="com__userImage" />
+									</picture>
 									<span class="com__userName">username</span>
 									<p class="com__description">
-										Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem ex&#160;consectetur perspiciatis perferendis suscipit, minus quos nobis.
-										Ex&#160;fugit veritatis et&#160;ducimus nostrum numquam quae rem, perferendis&#160;nam. Maiores, voluptatum!
+										&#171;Сервис на&#160;борту самолетов Skywinds на&#160;высшем уровне. Уютные кресла и&#160;вкусная еда делают полет комфортным.&#187;
 									</p>
 								</div>
 								<div class="swiper-slide com__comment">
-									<img src="" alt="" class="com__userImage" />
+									<picture>
+										<source srcset="./img/usericon.webp 1x, ./img/usericon@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/usericon.jpg 1x, ./img/usericon@2x.jpg 2x" type="image/jpeg" />
+										<img src="./img/usericon.jpg" alt="" class="com__userImage" />
+									</picture>
 									<span class="com__userName">username</span>
 									<p class="com__description">
-										Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem ex&#160;consectetur perspiciatis perferendis suscipit, minus quos nobis.
-										Ex&#160;fugit veritatis et&#160;ducimus nostrum numquam quae rem, perferendis&#160;nam. Maiores, voluptatum!
+										&#171;Забронировать билеты с&#160;компанией Skywinds было легко и&#160;быстро. Я&#160;остался доволен сервисом и&#160;атмосферой
+										на&#160;борту.&#187;
 									</p>
 								</div>
 								<div class="swiper-slide com__comment">
-									<img src="" alt="" class="com__userImage" />
+									<picture>
+										<source srcset="./img/usericon.webp 1x, ./img/usericon@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/usericon.jpg 1x, ./img/usericon@2x.jpg 2x" type="image/jpeg" />
+										<img src="./img/usericon.jpg" alt="" class="com__userImage" />
+									</picture>
 									<span class="com__userName">username</span>
 									<p class="com__description">
-										Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem ex&#160;consectetur perspiciatis perferendis suscipit, minus quos nobis.
-										Ex&#160;fugit veritatis et&#160;ducimus nostrum numquam quae rem, perferendis&#160;nam. Maiores, voluptatum!
+										&#171;Стильные и&#160;современные самолеты у&#160;компании Skywinds. Полет проходит комфортно и&#160;без проблем.&#187;
 									</p>
 								</div>
 								<div class="swiper-slide com__comment">
-									<img src="" alt="" class="com__userImage" />
+									<picture>
+										<source srcset="./img/usericon.webp 1x, ./img/usericon@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/usericon.jpg 1x, ./img/usericon@2x.jpg 2x" type="image/jpeg" />
+										<img src="./img/usericon.jpg" alt="" class="com__userImage" />
+									</picture>
 									<span class="com__userName">username</span>
 									<p class="com__description">
-										Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem ex&#160;consectetur perspiciatis perferendis suscipit, minus quos nobis.
-										Ex&#160;fugit veritatis et&#160;ducimus nostrum numquam quae rem, perferendis&#160;nam. Maiores, voluptatum!
+										&#171;Оперативная поддержка клиентов и&#160;высокий уровень сервиса&#160;&#8212; это то, за&#160;что я&#160;ценю компанию Skywinds.&#187;
 									</p>
 								</div>
 								<div class="swiper-slide com__comment">
-									<img src="" alt="" class="com__userImage" />
+									<picture>
+										<source srcset="./img/usericon.webp 1x, ./img/usericon@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/usericon.jpg 1x, ./img/usericon@2x.jpg 2x" type="image/jpeg" />
+										<img src="./img/usericon.jpg" alt="" class="com__userImage" />
+									</picture>
 									<span class="com__userName">username</span>
 									<p class="com__description">
-										Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem ex&#160;consectetur perspiciatis perferendis suscipit, minus quos nobis.
-										Ex&#160;fugit veritatis et&#160;ducimus nostrum numquam quae rem, perferendis&#160;nam. Maiores, voluptatum!
+										&#171;Приятный бонус от&#160;компании Skywinds&#160;&#8212; бесплатный Wi-Fi на&#160;борту. Очень удобно для работы и&#160;развлечений
+										во&#160;время полета.&#187;
 									</p>
 								</div>
 							</div>
 							<div class="swiper-pagination"></div>
 						</div>
 					</section>
-					<section class="website__news news">
+					<section class="website__news news" id="news">
 						<div class="container news__container">
 							<h2 class="news__title-block">Новости</h2>
 							<div class="news__block">
@@ -286,54 +319,51 @@
 									<div class="news__imageCont">
 										<img src="./img/Frame 74.png" alt="" class="news__image" />
 									</div>
-									<h3 class="news__title">News</h3>
-									<p class="news__description">
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro dolorem magni repellat libero minus doloribus nobis veritatis ex&#160;cumque
-										temporibus.
-									</p>
+									<h3 class="news__title">Новости</h3>
+									<p class="news__description">Skywinds объявили об&#160;открытии новых направлений авиаперелетов в&#160;Европе и&#160;Азии.</p>
 								</div>
 								<div class="news__nextNews">
 									<div class="news__nextNew">
 										<img src="./img/Frame 70.png" alt="" class="news__nextNew-image" />
-										<h3 class="news__title">News</h3>
+										<h3 class="news__title">Новости</h3>
 										<div class="news__divider"></div>
-										<p class="news__description" style="height: auto; margin-top: 20px;">Lorem</p>
+										<p class="news__description" style="height: auto; margin-top: 20px;">Компания Skywinds представила.</p>
 									</div>
 									<div class="news__nextNew">
 										<img src="./img/Frame 70.png" alt="" class="news__nextNew-image" />
-										<h3 class="news__title">News</h3>
+										<h3 class="news__title">Новости</h3>
 										<div class="news__divider"></div>
-										<p class="news__description" style="height: auto; margin-top: 20px;">Lorem</p>
+										<p class="news__description" style="height: auto; margin-top: 20px;">Skywinds запустили специальные.</p>
 									</div>
 									<div class="news__nextNew">
 										<img src="./img/Frame 70.png" alt="" class="news__nextNew-image" />
-										<h3 class="news__title">News</h3>
+										<h3 class="news__title">Новости</h3>
 										<div class="news__divider"></div>
-										<p class="news__description" style="height: auto; margin-top: 20px;">Lorem</p>
+										<p class="news__description" style="height: auto; margin-top: 20px;">Компания Skywinds ввела.</p>
 									</div>
 									<div class="news__nextNew">
 										<img src="./img/Frame 70.png" alt="" class="news__nextNew-image" />
-										<h3 class="news__title">News</h3>
+										<h3 class="news__title">Новости</h3>
 										<div class="news__divider"></div>
-										<p class="news__description" style="height: auto; margin-top: 20px;">Lorem</p>
+										<p class="news__description" style="height: auto; margin-top: 20px;">Skywinds подписали контракт.</p>
 									</div>
 									<div class="news__nextNew">
 										<img src="./img/Frame 70.png" alt="" class="news__nextNew-image" />
-										<h3 class="news__title">News</h3>
+										<h3 class="news__title">Новости</h3>
 										<div class="news__divider"></div>
-										<p class="news__description" style="height: auto; margin-top: 20px;">Lorem</p>
+										<p class="news__description" style="height: auto; margin-top: 20px;">Компания Skywinds получила.</p>
 									</div>
 									<div class="news__nextNew">
 										<img src="./img/Frame 70.png" alt="" class="news__nextNew-image" />
-										<h3 class="news__title">News</h3>
+										<h3 class="news__title">Новости</h3>
 										<div class="news__divider"></div>
-										<p class="news__description" style="height: auto; margin-top: 20px;">Lorem</p>
+										<p class="news__description" style="height: auto; margin-top: 20px;">Skywinds объявили о&#160;планах.</p>
 									</div>
 								</div>
 							</div>
 						</div>
 					</section>
-					<section class="website__partners partners">
+					<section class="website__partners partners" id="partners">
 						<div class="container partners__container">
 							<h2 class="partners__title">Наши партнеры</h2>
 							<ul class="partners__grid">
@@ -388,6 +418,9 @@
 				</div>
 			</main>
 		</div>
+		<button class="button button__to-top" id="ToTop">
+			<i data-lucide="chevron-up"></i>
+		</button>
 		<footer class="website__footer footer" id="footer">
 			<div class="container footer__container">
 				<div class="footer__left">

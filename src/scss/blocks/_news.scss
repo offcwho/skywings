@@ -31,6 +31,9 @@
         flex-direction: column;
         transition: var(--transition-3s);
         cursor: pointer;
+        @include small-mobile{
+            width: 100%;
+        }
         &:hover{
             scale: 1.05;
             @include small-tablet{

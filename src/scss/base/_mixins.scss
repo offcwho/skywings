@@ -26,3 +26,8 @@
       @content;
     }
   }
+  @mixin mb{
+    @media (max-width: (420px)){
+      @content;
+    }
+  }

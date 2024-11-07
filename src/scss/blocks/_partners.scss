@@ -18,6 +18,9 @@
         padding: 20px;
         transition: var(--transition-3s);
         border-radius: var(--rounded-lg);
+        @include mb{
+            padding: 5px;
+        }
         &:hover{
             scale: 1.05;
             background-color: var(--color-primary-secondary);

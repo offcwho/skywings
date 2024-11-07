@@ -49,6 +49,7 @@
 		"avif-webp-checker": "^1.0.0",
 		"fullpage.js": "^4.0.30",
 		"jquery": "^3.7.1",
+		"lucide": "^0.454.0",
 		"swiper": "^11.1.14"
 	}
 }

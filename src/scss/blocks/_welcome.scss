@@ -1,5 +1,9 @@
 .welcome{
     height: calc(var(--container-height) - var(--header-height));
+    @include mb{
+        padding: 75px 0;
+        height: 100%;
+    }
     &__container{
         height: 100%;
         position: relative;
@@ -23,11 +27,19 @@
         @include small-tablet{
             text-align: center;
         }
+        @include mb{
+            font-size: 40px;
+        }
     }
     &__description{
         color: var(--color-primary-secondary);
+        width: 600px;
         @include small-tablet{
+            width: 100%;
             text-align: center;
+        }
+        @include mb{
+            font-size: 32px;
         }
     }
     &__button{

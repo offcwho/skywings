@@ -2,6 +2,9 @@
     padding: 20px 40px;
     border-radius: var(--rounded-lg);
     width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     &--primary{
         background-color: var(--color-primary);
         transition: var(--transition-3s);
@@ -21,4 +24,17 @@
     &--filter{
         padding: 0;
     }
+    &__to-top{
+        display: none;
+        padding: 10px;
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        background-color: var(--color-primary-secondary);
+        border-radius: 50%;
+        color: var(--color-link);
+    }
+}
+.show{
+    display: flex;
 }
