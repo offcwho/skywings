@@ -2,7 +2,7 @@
     height: calc(var(--container-height) - var(--header-height));
     @include small-tablet{
         height: auto;
-        padding: 10px 0;
+        padding: 75px 0;
     }
     @include mb{
         height: 100%;
@@ -29,9 +29,10 @@
     &__title{
         @include small-tablet{
             text-align: center;
+            font-size: 40px;
         }
         @include mb{
-            font-size: 40px;
+            font-size: 25px;
         }
     }
     &__description{
@@ -40,9 +41,10 @@
         @include small-tablet{
             width: 100%;
             text-align: center;
+            font-size: 32px;
         }
         @include mb{
-            font-size: 32px;
+            font-size: 20px;
         }
     }
     &__button{
