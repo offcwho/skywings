@@ -1,0 +1,43 @@
+.boards{
+    padding: 100px 0;
+    background-color: var(--color-primary);
+    color: var(--color-link);
+    &__title{
+        margin-bottom: 30px;
+    }
+    &__list{
+        width: 100%;
+    }
+    &__item{
+        position: relative;
+        padding: 15px 20px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;
+        border-radius: var(--rounded-lg);
+        &:hover{
+            background-color: var(--color-link);
+            color: var(--color-primary);
+            &.datecost{
+                color: var(--color-primary);
+            }
+        }
+    }
+    &__datecost{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+    &__button{
+        top: -30px;
+        color: var(--color-link-bg);
+        position: absolute;
+        
+        &-cost{
+            top: -55px;
+            position: absolute;
+            color: var(--color-link-bg);
+        }
+    }
+}
