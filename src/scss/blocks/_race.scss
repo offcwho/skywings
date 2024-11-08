@@ -1,5 +1,4 @@
 .race{
-    height: calc(var(--container-height) - var(--header-height));
     padding: 125px 0;   
     @include small-tablet{
         height: 100%;
@@ -9,74 +8,5 @@
     }
     &__title{
         margin-bottom: 50px;
-    }
-    &__list{
-        padding: 0 5px 0 0;
-        width: 100%;
-        height: 500px;
-        border-radius: var(--rounded-lg);
-        display: flex;
-        flex-direction: column;
-        overflow-y: scroll;
-        &::-webkit-scrollbar{
-            width: 5px;
-            background-color: var(--color-link);
-        }
-        &::-webkit-scrollbar-thumb{
-            background-color: var(--color-primary);
-        }
-    }
-    &__item{
-        cursor: pointer;
-        position: relative;
-        padding: 20px 25px;
-        width: 100%;
-        display: flex;
-        justify-content: space-between; 
-        align-items: center;
-        border-radius: var(--rounded-lg);
-        transition: var(--transition-3s);
-        @include small-mobile{
-            flex-direction: column;
-            gap: 20px;
-        }
-        @media (hover: hover) and (pointer: fine) {
-            &:hover { 
-                background-color: var(--color-primary);
-                color: var(--color-link); 
-                &.datecost{
-                    color: var(--color-primary);
-                }
-            }
-        }
-        &:hover{
-            
-            
-        }
-    }
-    &__datecost{
-        position: relative;
-        display: flex;
-        flex-direction: column;
-    }
-    &__button{
-        left: 20px;
-        top: -30px;
-        color: var(--color-link-bg);
-        position: absolute;
-        @include small-mobile{
-            display: none;
-        }
-        &-cost{
-            top: -55px;
-            position: absolute;
-            color: var(--color-link-bg);
-            @include small-mobile{
-                display: none;
-            }
-        }
-    }
-    &__header{
-        position: relative;
     }
 }

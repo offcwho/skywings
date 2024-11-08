@@ -5,8 +5,6 @@ import { createIcons, icons } from 'lucide';
 
 createIcons({ icons });
 
-import { SpeedInsights } from '@vercel/speed-insights/next';
-
 // Мобильная навигация
 import mobileNav from './modules/mobile-nav.js';
 mobileNav();
